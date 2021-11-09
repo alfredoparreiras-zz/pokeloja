@@ -14,6 +14,11 @@
 html {
     font-size: 1.0rem;
     overflow-x: hidden;
+
+}
+
+body { 
+    min-height: 100vh;
 }
 
 /** Header Section **/
@@ -115,7 +120,9 @@ section.store .pokemons {
     width: 350px;
     height: 450px;
     border: 1px solid gray;
+    padding: 15px 15px;
 }
+
 
 section.store .pokemons:hover {
     background-color: #30353C;
@@ -130,16 +137,44 @@ section.store figure {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
+    
 }
 section.store figure img {
-    width: 70%;
+    width: 200px;
+    position: relative;
+    top: 10px;
+    transform: translateY(20%);
+    
+}
+
+section.store .pokemons:hover img {
+    width: 35%;
+    transform: translateY(-10%);
+    
 }
 
 section.store figure figcaption {
     position: relative;
     top: 15px;
     font-weight: 800;
+    opacity: 0;
+    visibility: hidden;
+}
+
+section.store .pokemons:hover figure figcaption  {
+    opacity: 1;
+    visibility: visible;
+}
+
+section.store .pokemons p {
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+section.store .pokemons:hover p {
+    opacity: 1;
+    visibility: visible;
 }
 
 section.store .pokemons .old-price {
@@ -164,6 +199,11 @@ section.store .pokemons button {
     color: whitesmoke;
     width: 130px;
     border-radius: 8px;
+}
+
+section.store .pokemons:hover button {
+    opacity: 1;
+    visibility: visible;
 }
 
 section.store .pokemons button:hover {
