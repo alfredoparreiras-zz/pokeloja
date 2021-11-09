@@ -8,6 +8,7 @@
     text-decoration: none;
     text-transform: capitalize;
     outline: none;
+    
 }
 
 html {
@@ -89,6 +90,7 @@ header .icons-bar ul li .icon {
 main {
     display: flex;
     flex-wrap: nowrap;
+    background-color: #DCDCDD;
 }
 
 /** Store Section **/
@@ -137,6 +139,7 @@ section.store figure img {
 section.store figure figcaption {
     position: relative;
     top: 15px;
+    font-weight: 800;
 }
 
 section.store .pokemons .old-price {
@@ -228,6 +231,7 @@ aside .cadastro #imput-email {
     text-transform: lowercase;
 }
 
+
 aside .cadastro #email-buttom { 
     background-color:#30353C;
     color: whitesmoke;
@@ -239,7 +243,6 @@ aside .cadastro #email-buttom:hover{
     background-color: seashell;
     color:#30353C ; 
 }
-
 /** Footer Section **/
 
 footer { 
