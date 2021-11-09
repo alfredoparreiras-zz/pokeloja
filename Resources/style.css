@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Work+Sans:ital,wght@0,200;0,400;1,700&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+}
+
+html {
+    font-size: 1.0rem;
+    overflow-x: hidden;
+}
+
+/** Header Section **/
+
+header { 
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    top: 0; left: 0; right: 0; 
+    background-color: #30353C;
+    height: 60px;
+    z-index: 1000;
+}
+
+header #logo {
+    width: 50px;
+    position: absolute;
+    left: 10px;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    color: #FCFCFC;
+    position: absolute;
+    left: 70px;
+    font-weight: 700;
+
+}
+
+header .navbar {
+    position: absolute;
+    top: 18px;
+}
+
+header .navbar a {
+    color: white;
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+    border-radius: .75rem;
+}
+
+header .navbar a:hover {
+    background-color: seashell;
+    color:#30353C ;
+}
+
+header .icons-bar {
+    display: inline-flex;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+header .icons-bar ul {
+    list-style: none;
+    display: inline-flex;
+    font-size: 1.5rem;
+}
+
+header .icons-bar ul li {
+    padding: .5rem .5rem;
+    
+}
+
+header .icons-bar ul li .icon {
+    color: white;
+    cursor: pointer;
+}
+
+/** Main Section **/
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/** Store Section **/
+
+section.store {
+    position: relative;
+    top: 3.7rem;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 2rem;
+    width: 75%;
+    gap: 1.5rem;
+    max-height: 2500px;
+}
+
+section.store .pokemons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 450px;
+    border: 1px solid gray;
+}
+
+section.store .pokemons:hover {
+    background-color: #30353C;
+}
+
+section.store .pokemons:hover .new-price {
+    color: whitesmoke;
+}
+
+section.store figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+section.store figure img {
+    width: 70%;
+}
+
+section.store figure figcaption {
+    position: relative;
+    top: 15px;
+}
+
+section.store .pokemons .old-price {
+    font-size: 0.9rem ;
+    color:darkgrey;
+    font-weight: 700;
+    text-decoration-line:line-through ;
+}
+
+section.store .pokemons .new-price {
+    font-size: 1rem;
+    color: darkgreen;
+    font-weight: 800;
+}
+
+#psyduck {
+    width: 50%;
+}
+
+section.store .pokemons button {
+    background-color:#30353C;
+    color: whitesmoke;
+    width: 130px;
+    border-radius: 8px;
+}
+
+section.store .pokemons button:hover {
+    background-color: seashell;
+    color:#30353C ;
+}
+/** Aside Section **/
+
+aside { 
+    width: 20%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+aside .publi img {
+    position: relative;
+    top: 15px;
+    width: 100%;
+}
+
+aside .top-pokemons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    top: 60px;
+}
+
+aside .top-pokemons h3 { 
+
+}
+
+aside .top-pokemons img { 
+    width: 13%;
+}
+
+aside .top-pokemons li { 
+    display: flex;
+    justify-content: center;
+}
+
+aside .top-pokemons li p { 
+   
+}
+
+aside .cadastro { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 150px; 
+    border: 1px solid gray;
+    width: 80%;
+    min-height: 150px;
+}
+
+aside .cadastro #imput-email {
+    width: 70%;
+    text-transform: lowercase;
+}
+
+aside .cadastro #email-buttom { 
+    background-color:#30353C;
+    color: whitesmoke;
+    width: 130px;
+    border-radius: 8px;
+}
+
+aside .cadastro #email-buttom:hover{ 
+    background-color: seashell;
+    color:#30353C ; 
+}
+
+/** Footer Section **/
+
+footer { 
+    width: 100%;
+    height: 130px;
+    background-color: #30353C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .social { 
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+footer .social a { 
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding: .5rem 1rem;
+}
+
+footer p {
+    color: white;
+
+}
