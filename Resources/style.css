@@ -113,14 +113,47 @@ section.store {
 }
 
 section.store .pokemons {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 350px;
     height: 450px;
-    border: 1px solid gray;
     padding: 15px 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.pokemons {
+    overflow: hidden;
+}
+
+section.store .pokemons::before {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 755px;
+    background: linear-gradient(#ff2e00,#30353c);
+    animation: animate 4s linear infinite;
+
+}
+
+section.store .pokemons::after {
+    content: "";
+    position: absolute;
+    background:#DCDCDD ;
+    inset: 2px;
+    border-radius: 10px;
+}
+
+@keyframes animate { 
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -128,15 +161,13 @@ section.store .pokemons:hover {
     background-color: #30353C;
 }
 
-section.store .pokemons:hover .new-price {
-    color: whitesmoke;
-}
 
 section.store figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    z-index: 10;
     
 }
 section.store figure img {
@@ -169,12 +200,17 @@ section.store .pokemons:hover figure figcaption  {
 section.store .pokemons p {
     opacity: 0;
     visibility: hidden;
-
+    
+}
+section.store .pokemons:hover .new-price {
+    color: #ff2e00;
+    font-size: 2rem;
 }
 
 section.store .pokemons:hover p {
     opacity: 1;
     visibility: visible;
+    z-index: 10;
 }
 
 section.store .pokemons .old-price {
@@ -186,7 +222,7 @@ section.store .pokemons .old-price {
 
 section.store .pokemons .new-price {
     font-size: 1rem;
-    color: darkgreen;
+    color: #ff2e00;
     font-weight: 800;
 }
 
@@ -196,19 +232,19 @@ section.store .pokemons .new-price {
 
 section.store .pokemons button {
     background-color:#30353C;
+    font-weight: 600;
     color: whitesmoke;
     width: 130px;
+    height: 40px;
     border-radius: 8px;
+    z-index: 10;
 }
 
-section.store .pokemons:hover button {
-    opacity: 1;
-    visibility: visible;
-}
 
 section.store .pokemons button:hover {
-    background-color: seashell;
+    background: linear-gradient(170deg, rgba(48,53,60,1) 11%, rgba(48,53,60,1) 64%, rgba(255,46,0,1) 93%);
     color:#30353C ;
+    color: white;
 }
 /** Aside Section **/
 
